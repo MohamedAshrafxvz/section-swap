@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تبديل السكاشن</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>تبديل السكاشن</h1>
+    <p class="sub">قول انت في سكشن كام وعايز تروح فين، وهنطلعلك اللي عايز يبدل معاك.</p>
+
+    <section id="formCard" class="card">
+      <label for="name">الاسم</label>
+      <input id="name" autocomplete="name" maxlength="50">
+      <label for="phone">رقم الواتساب</label>
+      <input id="phone" type="tel" inputmode="numeric" placeholder="01xxxxxxxxx" dir="ltr">
+      <label>سكشنك الحالي</label>
+      <div id="curChips" class="chips"></div>
+      <label>السكاشن اللي تقبل تروحلها</label>
+      <div id="wantChips" class="chips"></div>
+      <p id="err" class="err" role="alert"></p>
+      <button id="save" class="go">ابحث عن مبادلة</button>
+    </section>
+
+    <section id="resultCard" class="card" hidden></section>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
